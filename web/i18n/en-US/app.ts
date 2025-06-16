@@ -1,10 +1,10 @@
 const translation = {
-  createApp: 'CREATE APP',
+  createApp: 'Create New',
   types: {
     all: 'All',
     chatbot: 'Chatbot',
-    agent: 'Agent',
-    workflow: 'Workflow',
+    agents: 'Agents',
+    workflows: 'Workflows',
     completion: 'Completion',
     advanced: 'Chatflow',
     basic: 'Basic',

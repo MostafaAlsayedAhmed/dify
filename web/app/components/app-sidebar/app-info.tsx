@@ -221,7 +221,7 @@ const AppInfo = ({ expand }: IAppInfoProps) => {
                 <div className='flex w-full'>
                   <div className='system-md-semibold truncate text-text-secondary'>{appDetail.name}</div>
                 </div>
-                <div className='system-2xs-medium-uppercase text-text-tertiary'>{appDetail.mode === 'advanced-chat' ? t('app.types.advanced') : appDetail.mode === 'agent-chat' ? t('app.types.agent') : appDetail.mode === 'chat' ? t('app.types.chatbot') : appDetail.mode === 'completion' ? t('app.types.completion') : t('app.types.workflow')}</div>
+                <div className='system-2xs-medium-uppercase text-text-tertiary'>{appDetail.mode === 'advanced-chat' ? t('app.types.advanced') : appDetail.mode === 'agent-chat' ? t('app.types.agents') : appDetail.mode === 'chat' ? t('app.types.chatbot') : appDetail.mode === 'completion' ? t('app.types.completion') : t('app.types.workflows')}</div>
               </div>
             )
           }
@@ -243,7 +243,7 @@ const AppInfo = ({ expand }: IAppInfoProps) => {
             />
             <div className='flex w-full grow flex-col items-start justify-center'>
               <div className='system-md-semibold w-full truncate text-text-secondary'>{appDetail.name}</div>
-              <div className='system-2xs-medium-uppercase text-text-tertiary'>{appDetail.mode === 'advanced-chat' ? t('app.types.advanced') : appDetail.mode === 'agent-chat' ? t('app.types.agent') : appDetail.mode === 'chat' ? t('app.types.chatbot') : appDetail.mode === 'completion' ? t('app.types.completion') : t('app.types.workflow')}</div>
+              <div className='system-2xs-medium-uppercase text-text-tertiary'>{appDetail.mode === 'advanced-chat' ? t('app.types.advanced') : appDetail.mode === 'agent-chat' ? t('app.types.agents') : appDetail.mode === 'chat' ? t('app.types.chatbot') : appDetail.mode === 'completion' ? t('app.types.completion') : t('app.types.workflows')}</div>
             </div>
           </div>
           {/* description */}

@@ -1,11 +1,28 @@
 @import "preflight.css";
-@tailwind base;
-@tailwind components;
 
+@import "../components/base/button/index.css";
 @import '../../themes/light.css';
 @import '../../themes/dark.css';
-@import "../../themes/manual-light.css";
 @import "../../themes/manual-dark.css";
+@import "../../themes/manual-light.css";
+@import "../components/base/action-button/index.css";
+@import "../components/base/modal/index.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
 
 html {
   color-scheme: light;
@@ -680,21 +697,3 @@ button:focus-within {
   display: none;
 }
 
-@import "../components/base/button/index.css";
-@import "../components/base/action-button/index.css";
-@import "../components/base/modal/index.css";
-
-@tailwind utilities;
-
-@layer utilities {
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-}

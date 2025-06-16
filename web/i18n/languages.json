@@ -8,6 +8,13 @@
       "supported": true
     },
     {
+      "value": "ar-AR",
+      "name": " العربية ",
+      "prompt_name": "Arabic",
+      "example": "مرحبا, Dify!",
+      "supported": true
+    },
+    {
       "value": "zh-Hans",
       "name": "简体中文",
       "prompt_name": "Chinese Simplified",

@@ -26,6 +26,7 @@ export type I18nText = {
   'fa-IR': string
   'sl-SI': string
   'th-TH': string
+  'ar-AR': string
 }
 
 export const languages = data.languages

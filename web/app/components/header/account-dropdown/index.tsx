@@ -68,8 +68,8 @@ export default function AppSelector() {
         {
           ({ open }) => (
             <>
-              <MenuButton className={cn('inline-flex items-center rounded-[20px] p-0.5 hover:bg-background-default-dodge', open && 'bg-background-default-dodge')}>
-                <Avatar avatar={userProfile.avatar_url} name={userProfile.name} size={36} />
+              <MenuButton className={cn('inline-flex items-center rounded-[20px] bg-gray-500 p-0.5 hover:bg-background-default-dodge', open && 'bg-background-default-dodge')}>
+                <Avatar avatar={userProfile.avatar_url} name={userProfile.name} size={30} />
               </MenuButton>
               <Transition
                 as={Fragment}
@@ -80,7 +80,7 @@ export default function AppSelector() {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <MenuItems
+                <MenuItems anchor={{ to: 'right', offset: 8, gap: 15, padding: 15 }}
                   className="
                     absolute right-0 mt-1.5 w-60 max-w-80
                     origin-top-right divide-y divide-divider-subtle rounded-xl bg-components-panel-bg-blur shadow-lg

@@ -128,6 +128,7 @@ const config = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('tailwindcss-animate'),
   ],
   // https://github.com/tailwindlabs/tailwindcss/discussions/5969
   corePlugins: {

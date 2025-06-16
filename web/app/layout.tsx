@@ -7,9 +7,15 @@ import { getLocaleOnServer } from '@/i18n/server'
 import { TanstackQueryIniter } from '@/context/query-client'
 import { ThemeProvider } from 'next-themes'
 import './styles/globals.css'
+import '@/themes/globals.css'
 import './styles/markdown.scss'
 import GlobalPublicStoreProvider from '@/context/global-public-context'
+import { Sidebar } from '@/app/components/Sidebar'
 
+import { AppContextProvider } from '@/context/app-context'
+import { EventEmitterContextProvider } from '@/context/event-emitter'
+import { ProviderContextProvider } from '@/context/provider-context'
+import { ModalContextProvider } from '@/context/modal-context'
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -66,7 +72,21 @@ const LocaleLayout = async ({
               >
                 <I18nServer>
                   <GlobalPublicStoreProvider>
-                    {children}
+                    <AppContextProvider>
+                      <EventEmitterContextProvider>
+                        <ProviderContextProvider>
+                          <ModalContextProvider>
+                            <div className='flex'>
+                              <Sidebar />
+                              <main className='ml-[56px] w-full'>
+                                {children}
+                              </main>
+                            </div>
+
+                          </ModalContextProvider>
+                        </ProviderContextProvider>
+                      </EventEmitterContextProvider>
+                    </AppContextProvider>
                   </GlobalPublicStoreProvider>
                 </I18nServer>
               </ThemeProvider>

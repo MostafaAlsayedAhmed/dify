@@ -313,7 +313,7 @@ const AppCard = ({ app, onRefresh }: AppCardProps) => {
           e.preventDefault()
           getRedirection(isCurrentWorkspaceEditor, app, push)
         }}
-        className='group relative col-span-1 inline-flex h-[160px] cursor-pointer flex-col rounded-xl border-[1px] border-solid border-components-card-border bg-components-card-bg shadow-sm transition-all duration-200 ease-in-out hover:shadow-lg'
+        className='group relative col-span-1 inline-flex h-[160px] cursor-pointer flex-col rounded-xl border-[1px] border-solid border-neutral-200 bg-white transition-all duration-200 ease-in-out hover:shadow-lg'
       >
         <div className='flex h-[66px] shrink-0 grow-0 items-center gap-3 px-[14px] pb-3 pt-[14px]'>
           <div className='relative shrink-0'>
@@ -350,6 +350,32 @@ const AppCard = ({ app, onRefresh }: AppCardProps) => {
               <RiVerifiedBadgeLine className='h-4 w-4 text-text-quaternary' />
             </Tooltip>}
           </div>
+          <div className='!hidden_group-hover:!flex shrink-0 '>
+            <CustomPopover
+              htmlContent={<Operations />}
+              position="br"
+              trigger="click"
+              btnElement={
+                <div
+                  className='flex h-8 w-8 cursor-pointer items-center justify-center '
+                >
+                  <RiMoreFill className='h-4 w-4 text-text-tertiary' />
+                </div>
+              }
+              btnClassName={open =>
+                cn(
+                  open ? '!bg-black/5 !shadow-none' : '!bg-transparent',
+                  'h-8 w-8 rounded-full border border-neutral-200 !p-2 hover:!bg-black/5',
+                )
+              }
+              popupClassName={
+                (app.mode === 'completion' || app.mode === 'chat')
+                  ? '!w-[256px] translate-x-[-224px]'
+                  : '!w-[216px] translate-x-[-128px]'
+              }
+              className={'!z-20 h-fit'}
+            />
+          </div>
         </div>
         <div className='title-wrapper h-[90px] px-[14px] text-xs leading-normal text-text-tertiary'>
           <div
@@ -385,32 +411,7 @@ const AppCard = ({ app, onRefresh }: AppCardProps) => {
                 </div>
               </div>
               <div className='mx-1 !hidden h-[14px] w-[1px] shrink-0 group-hover:!flex' />
-              <div className='!hidden shrink-0 group-hover:!flex'>
-                <CustomPopover
-                  htmlContent={<Operations />}
-                  position="br"
-                  trigger="click"
-                  btnElement={
-                    <div
-                      className='flex h-8 w-8 cursor-pointer items-center justify-center rounded-md'
-                    >
-                      <RiMoreFill className='h-4 w-4 text-text-tertiary' />
-                    </div>
-                  }
-                  btnClassName={open =>
-                    cn(
-                      open ? '!bg-black/5 !shadow-none' : '!bg-transparent',
-                      'h-8 w-8 rounded-md border-none !p-2 hover:!bg-black/5',
-                    )
-                  }
-                  popupClassName={
-                    (app.mode === 'completion' || app.mode === 'chat')
-                      ? '!w-[256px] translate-x-[-224px]'
-                      : '!w-[216px] translate-x-[-128px]'
-                  }
-                  className={'!z-20 h-fit'}
-                />
-              </div>
+
             </>
           )}
         </div>

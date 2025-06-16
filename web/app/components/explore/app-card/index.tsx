@@ -42,8 +42,8 @@ const AppCard = ({
           <div className='flex items-center text-[10px] font-medium leading-[18px] text-text-tertiary'>
             {appBasicInfo.mode === 'advanced-chat' && <div className='truncate'>{t('app.types.advanced').toUpperCase()}</div>}
             {appBasicInfo.mode === 'chat' && <div className='truncate'>{t('app.types.chatbot').toUpperCase()}</div>}
-            {appBasicInfo.mode === 'agent-chat' && <div className='truncate'>{t('app.types.agent').toUpperCase()}</div>}
-            {appBasicInfo.mode === 'workflow' && <div className='truncate'>{t('app.types.workflow').toUpperCase()}</div>}
+            {appBasicInfo.mode === 'agent-chat' && <div className='truncate'>{t('app.types.agents').toUpperCase()}</div>}
+            {appBasicInfo.mode === 'workflow' && <div className='truncate'>{t('app.types.workflows').toUpperCase()}</div>}
             {appBasicInfo.mode === 'completion' && <div className='truncate'>{t('app.types.completion').toUpperCase()}</div>}
           </div>
         </div>

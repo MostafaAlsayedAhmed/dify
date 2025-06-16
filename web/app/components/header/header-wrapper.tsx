@@ -11,16 +11,13 @@ const HeaderWrapper = ({
   children,
 }: HeaderWrapperProps) => {
   const pathname = usePathname()
-  const isBordered = ['/apps', '/datasets', '/datasets/create', '/tools'].includes(pathname)
 
   return (
-    <div className={classNames(
-      'sticky top-0 left-0 right-0 z-30 flex flex-col grow-0 shrink-0 basis-auto min-h-[56px]',
-      s.header,
-      isBordered ? 'border-b border-divider-regular' : '',
-    )}
-    >
-      {children}
+    <div className='absolute right-[60px] top-3 w-[240px] rounded-2xl border border-[darkgray]'>
+      <div className={classNames(
+        'sticky top-0 left-0 right-0 z-30 flex flex-col grow-0 shrink-0 basis-auto min-h-[56px]',
+        s.header,
+      )} >  {children}    </div>
     </div>
   )
 }

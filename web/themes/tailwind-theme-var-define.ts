@@ -736,6 +736,72 @@ const vars = {
 
   'saas-background': 'var(--color-saas-background)',
   'saas-pricing-grid-bg': 'var(--color-saas-pricing-grid-bg)',
+  'accentsorange-200': 'var(--accentsorange-200)',
+  'accentsorange-300': 'var(--accentsorange-300)',
+  'accentsorange-400': 'var(--accentsorange-400)',
+  'accentsorange-500': 'var(--accentsorange-500)',
 
+  'neutral-00': 'var(--neutral-00)',
+  'neutral-50': 'var(--neutral-50)',
+  'neutral-100': 'var(--neutral-100)',
+  'neutral-200': 'var(--neutral-200)',
+  'neutral-300': 'var(--neutral-300)',
+  'neutral-500': 'var(--neutral-500)',
+  'neutral-700': 'var(--neutral-700)',
+  'neutral-900': 'var(--neutral-900)',
+  'neutral-950': 'var(--neutral-950)',
+
+  'primary-50': 'var(--primary-50)',
+  'primary-100': 'var(--primary-100)',
+  'primary-200': 'var(--primary-200)',
+  'primary-300': 'var(--primary-300)',
+  'primary-400': 'var(--primary-400)',
+  'primary-500': 'var(--primary-500)',
+  'primary-600': 'var(--primary-600)',
+  'primary-700': 'var(--primary-700)',
+
+  "border": 'hsl(var(--border))',
+  "input": 'hsl(var(--input))',
+  "ring": 'hsl(var(--ring))',
+  "background": 'hsl(var(--background))',
+  "foreground": 'hsl(var(--foreground))',
+  "primary": {
+    DEFAULT: 'hsl(var(--primary))',
+    foreground: 'hsl(var(--primary-foreground))',
+  },
+  "secondary": {
+    DEFAULT: 'hsl(var(--secondary))',
+    foreground: 'hsl(var(--secondary-foreground))',
+  },
+  "destructive": {
+    DEFAULT: 'hsl(var(--destructive))',
+    foreground: 'hsl(var(--destructive-foreground))',
+  },
+  "muted": {
+    DEFAULT: 'hsl(var(--muted))',
+    foreground: 'hsl(var(--muted-foreground))',
+  },
+  "accent": {
+    DEFAULT: 'hsl(var(--accent))',
+    foreground: 'hsl(var(--accent-foreground))',
+  },
+  "popover": {
+    DEFAULT: 'hsl(var(--popover))',
+    foreground: 'hsl(var(--popover-foreground))',
+  },
+  "card": {
+    DEFAULT: 'hsl(var(--card))',
+    foreground: 'hsl(var(--card-foreground))',
+  },
+  "sidebar": {
+    "DEFAULT": 'hsl(var(--sidebar-background))',
+    "foreground": 'hsl(var(--sidebar-foreground))',
+    // primary: 'hsl(var(--sidebar-primary))',
+    // 'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+    "accent": 'hsl(var(--sidebar-accent))',
+    'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+    "border": 'hsl(var(--sidebar-border))',
+    "ring": 'hsl(var(--sidebar-ring))',
+  },
 }
 export default vars

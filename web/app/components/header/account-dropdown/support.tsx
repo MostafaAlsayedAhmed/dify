@@ -40,13 +40,12 @@ export default function Support() {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <MenuItems
+            <MenuItems anchor='right end'
               className={cn(
-                `absolute top-[1px] z-10 max-h-[70vh] w-[216px] origin-top-right -translate-x-full divide-y divide-divider-subtle overflow-y-scroll
+                `absolute top-[1px] z-10 ms-2 max-h-[70vh] w-[216px] origin-top-right divide-y divide-divider-subtle overflow-y-scroll
                 rounded-xl border-[0.5px] border-components-panel-border bg-components-panel-bg-blur shadow-lg backdrop-blur-[5px] focus:outline-none
               `,
-              )}
-            >
+              )}>
               <div className="px-1 py-1">
                 {canEmailSupport && <MenuItem>
                   <a

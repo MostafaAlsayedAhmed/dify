@@ -111,7 +111,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
               <div className='flex flex-row gap-2'>
                 <AppTypeCard
                   active={appMode === 'workflow'}
-                  title={t('app.types.workflow')}
+                  title={t('app.types.workflows')}
                   description={t('app.newApp.workflowShortDescription')}
                   icon={<div className='flex h-6 w-6 items-center justify-center rounded-md bg-components-icon-bg-indigo-solid'>
                     <RiExchange2Fill className='h-4 w-4 text-components-avatar-shape-fill-stop-100' />
@@ -155,7 +155,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                     }} />
                   <AppTypeCard
                     active={appMode === 'agent-chat'}
-                    title={t('app.types.agent')}
+                    title={t('app.types.agents')}
                     description={t('app.newApp.agentShortDescription')}
                     icon={<div className='flex h-6 w-6 items-center justify-center rounded-md bg-components-icon-bg-violet-solid'>
                       <Logic className='h-4 w-4 text-components-avatar-shape-fill-stop-100' />
@@ -315,7 +315,7 @@ function AppPreview({ mode }: { mode: AppMode }) {
       link: 'https://docs.dify.ai/en/guides/workflow/README',
     },
     'agent-chat': {
-      title: t('app.types.agent'),
+      title: t('app.types.agents'),
       description: t('app.newApp.agentUserDescription'),
       link: 'https://docs.dify.ai/en/guides/application-orchestrate/agent',
     },
@@ -325,7 +325,7 @@ function AppPreview({ mode }: { mode: AppMode }) {
       link: null,
     },
     'workflow': {
-      title: t('app.types.workflow'),
+      title: t('app.types.workflows'),
       description: t('app.newApp.workflowUserDescription'),
       link: 'https://docs.dify.ai/en/guides/workflow/README',
     },

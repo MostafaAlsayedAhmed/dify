@@ -147,6 +147,7 @@ const translation = {
     status: 'beta',
     explore: 'Explore',
     apps: 'Studio',
+    flows: 'Flows',
     appDetail: 'App Detail',
     account: 'Account',
     plugins: 'Plugins',
@@ -525,7 +526,7 @@ const translation = {
   },
   environment: {
     testing: 'TESTING',
-    development: 'DEVELOPMENT',
+    development: 'DEV',
   },
   appModes: {
     completionApp: 'Text Generator',

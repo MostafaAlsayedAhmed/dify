@@ -40,7 +40,7 @@ const nextConfig = {
       search: '',
     })),
   },
-  experimental: {
+  turbopack: {
   },
   // fix all before production. Now it slow the develop speed.
   eslint: {
